@@ -8,14 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		65D6F85B198BE0B100268E38 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65D6F85A198BE0B100268E38 /* Foundation.framework */; };
-		65D6F860198BE0B100268E38 /* sqlite3_8_5.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 65D6F85F198BE0B100268E38 /* sqlite3_8_5.h */; };
-		65D6F862198BE0B100268E38 /* sqlite3_8_5.m in Sources */ = {isa = PBXBuildFile; fileRef = 65D6F861198BE0B100268E38 /* sqlite3_8_5.m */; };
 		65D6F869198BE0B100268E38 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65D6F868198BE0B100268E38 /* XCTest.framework */; };
 		65D6F86A198BE0B100268E38 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65D6F85A198BE0B100268E38 /* Foundation.framework */; };
 		65D6F86C198BE0B100268E38 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65D6F86B198BE0B100268E38 /* UIKit.framework */; };
 		65D6F86F198BE0B100268E38 /* libsqlite3.8.5.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 65D6F857198BE0B100268E38 /* libsqlite3.8.5.a */; };
 		65D6F875198BE0B100268E38 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 65D6F873198BE0B100268E38 /* InfoPlist.strings */; };
-		65D6F877198BE0B100268E38 /* sqlite3_8_5Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 65D6F876198BE0B100268E38 /* sqlite3_8_5Tests.m */; };
+		65D6F884198BE10A00268E38 /* shell.c in Sources */ = {isa = PBXBuildFile; fileRef = 65D6F880198BE10A00268E38 /* shell.c */; };
+		65D6F885198BE10A00268E38 /* sqlite3.c in Sources */ = {isa = PBXBuildFile; fileRef = 65D6F881198BE10A00268E38 /* sqlite3.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,7 +34,6 @@
 			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
-				65D6F860198BE0B100268E38 /* sqlite3_8_5.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -45,14 +43,15 @@
 		65D6F857198BE0B100268E38 /* libsqlite3.8.5.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libsqlite3.8.5.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		65D6F85A198BE0B100268E38 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		65D6F85E198BE0B100268E38 /* sqlite3.8.5-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "sqlite3.8.5-Prefix.pch"; sourceTree = "<group>"; };
-		65D6F85F198BE0B100268E38 /* sqlite3_8_5.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = sqlite3_8_5.h; sourceTree = "<group>"; };
-		65D6F861198BE0B100268E38 /* sqlite3_8_5.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = sqlite3_8_5.m; sourceTree = "<group>"; };
 		65D6F867198BE0B100268E38 /* sqlite3.8.5Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = sqlite3.8.5Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		65D6F868198BE0B100268E38 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		65D6F86B198BE0B100268E38 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		65D6F872198BE0B100268E38 /* sqlite3.8.5Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "sqlite3.8.5Tests-Info.plist"; sourceTree = "<group>"; };
 		65D6F874198BE0B100268E38 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		65D6F876198BE0B100268E38 /* sqlite3_8_5Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = sqlite3_8_5Tests.m; sourceTree = "<group>"; };
+		65D6F880198BE10A00268E38 /* shell.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = shell.c; sourceTree = "<group>"; };
+		65D6F881198BE10A00268E38 /* sqlite3.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = sqlite3.c; sourceTree = "<group>"; };
+		65D6F882198BE10A00268E38 /* sqlite3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sqlite3.h; sourceTree = "<group>"; };
+		65D6F883198BE10A00268E38 /* sqlite3ext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sqlite3ext.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,8 +109,10 @@
 		65D6F85C198BE0B100268E38 /* sqlite3.8.5 */ = {
 			isa = PBXGroup;
 			children = (
-				65D6F85F198BE0B100268E38 /* sqlite3_8_5.h */,
-				65D6F861198BE0B100268E38 /* sqlite3_8_5.m */,
+				65D6F880198BE10A00268E38 /* shell.c */,
+				65D6F881198BE10A00268E38 /* sqlite3.c */,
+				65D6F882198BE10A00268E38 /* sqlite3.h */,
+				65D6F883198BE10A00268E38 /* sqlite3ext.h */,
 				65D6F85D198BE0B100268E38 /* Supporting Files */,
 			);
 			path = sqlite3.8.5;
@@ -128,7 +129,6 @@
 		65D6F870198BE0B100268E38 /* sqlite3.8.5Tests */ = {
 			isa = PBXGroup;
 			children = (
-				65D6F876198BE0B100268E38 /* sqlite3_8_5Tests.m */,
 				65D6F871198BE0B100268E38 /* Supporting Files */,
 			);
 			path = sqlite3.8.5Tests;
@@ -224,7 +224,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				65D6F862198BE0B100268E38 /* sqlite3_8_5.m in Sources */,
+				65D6F884198BE10A00268E38 /* shell.c in Sources */,
+				65D6F885198BE10A00268E38 /* sqlite3.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -232,7 +233,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				65D6F877198BE0B100268E38 /* sqlite3_8_5Tests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -332,6 +332,12 @@
 				DSTROOT = /tmp/sqlite3_8_5.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "sqlite3.8.5/sqlite3.8.5-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS_NOT_USED_IN_PRECOMPS = (
+					SQLITE_ENABLE_FTS3,
+					SQLITE_ENABLE_FTS3_PARENTHESIS,
+					SQLITE_ENABLE_FTS4,
+					SQLITE_ENABLE_FTS4_UNICODE61,
+				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -344,6 +350,12 @@
 				DSTROOT = /tmp/sqlite3_8_5.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "sqlite3.8.5/sqlite3.8.5-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS_NOT_USED_IN_PRECOMPS = (
+					SQLITE_ENABLE_FTS3,
+					SQLITE_ENABLE_FTS3_PARENTHESIS,
+					SQLITE_ENABLE_FTS4,
+					SQLITE_ENABLE_FTS4_UNICODE61,
+				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
